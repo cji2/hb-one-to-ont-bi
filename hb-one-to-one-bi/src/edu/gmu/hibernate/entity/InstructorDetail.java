@@ -29,7 +29,8 @@ public class InstructorDetail {
 
 	// add new field for instructor (also add getter/setters)
 	// add @OnetoOne annotation.
-	@OneToOne(mappedBy="instructorDetail", cascade=CascadeType.ALL)
+	@OneToOne(mappedBy="instructorDetail", 
+			cascade= {CascadeType.PERSIST, CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE})
 	private Instructor instructor;
 	
 	// create constructors.
