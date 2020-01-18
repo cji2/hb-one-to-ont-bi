@@ -43,7 +43,7 @@ public class InstructorDetail {
 	// generate getter and setter.
 	public Instructor getInstructor() {
 		return instructor;
-	}
+	} 
 	
 	public void setInstructor(Instructor instructor) {
 		this.instructor = instructor;
